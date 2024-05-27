@@ -10,4 +10,15 @@ class PlayersController < ApplicationController
     render :show
   end
 
+  def create
+    @player = Player.create(
+      name: params[:name],
+      position: params[:position],
+      nationality: params[:nationality],
+      dob: params[:dob],
+    )
+    render :show
+  end
+
+
 end
