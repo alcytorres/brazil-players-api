@@ -20,5 +20,15 @@ class PlayersController < ApplicationController
     render :show
   end
 
+  def update
+    @player = Player.find_by(id: params[:id])
+    @player.update(
+      name: params[:name] || @player.name,
+      position: params[:position] || @player.position,
+      nationality: params[:nationality] || @player.nationality,
+      dob: params[:dob] || @player.dob,
+    )
+    render :show
+  end
 
 end
