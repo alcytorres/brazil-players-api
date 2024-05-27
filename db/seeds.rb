@@ -21,3 +21,5 @@
 # player.save
 # player = Player.new(name: "Cafu", position: "Defender", nationality: "Brazil", dob: 1970)
 # player.save
+# player = Player.new(name: "Rivaldo", position: "Forward", nationality: "Brazil", dob: 1972)
+# player.save
